@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>She9 - Pregnancy Care Center</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="branding">
+        <img src="logo.jpg" alt="She9 Logo" class="logo" />
+        <div class="brand-text">
+          <h1>She9</h1>
+          <p>Empowering Every Mother, Every Step</p>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#tips">Tips</a>
+        <a href="#contact">Contact</a>
+        <span id="welcomeUser" class="hidden"></span>
+        <button id="loginBtn">Login</button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="about">
+    <h1>Welcome to She9 Pregnancy Care Center</h1>
+    <p>We support mothers through every stage of pregnancy with trusted advice, compassionate care, and professional resources.</p>
+  </section>
+
+  <section id="resultsSection" class="hidden">
+  <h2>Your Personalized Pregnancy Plans</h2>
+  <div class="results-grid">
+    <div class="result-card">
+      <h3>Nutrition Plan</h3>
+      <pre id="nutritionResult"></pre>
+    </div>
+    <div class="result-card">
+      <h3>Activity Plan</h3>
+      <pre id="activityResult"></pre>
+    </div>
+    <div class="result-card">
+      <h3>Medication & Supplements</h3>
+      <pre id="medicationResult"></pre>
+    </div>
+    <div class="result-card">
+      <h3>Mood Tracker</h3>
+      <pre id="moodResult"></pre>
+    </div>
+  </div>
+</section>
+
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Prenatal Checkups</h3>
+        <p>Regular appointments to monitor mother and baby health.</p>
+      </div>
+      <div class="card">
+        <h3>Nutrition Guidance</h3>
+        <p>Expert diet plans tailored to each trimester.</p>
+      </div>
+      <div class="card">
+        <h3>Birth Preparation</h3>
+        <p>Workshops and one-on-one support for labor, delivery, and recovery.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="tips">
+    <h2>Pregnancy Tips</h2>
+    <div class="tips">
+      <div class="card">
+        <h3>Stay Hydrated</h3>
+        <p>Drink water frequently to maintain energy and health.</p>
+      </div>
+      <div class="card">
+        <h3>Gentle Exercise</h3>
+        <p>Practice safe movement like prenatal yoga or walking.</p>
+      </div>
+      <div class="card">
+        <h3>Get Plenty of Rest</h3>
+        <p>Sleep well and listen to your body’s needs.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="4" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 She9. All rights reserved.</p>
+  </footer>
+
+  <!-- Login + Details Modal -->
+  <div class="modal" id="loginModal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+
+      <div id="loginView">
+        <h2>User Login</h2>
+        <form id="loginForm">
+          <input type="text" id="username" placeholder="Username" required />
+          <input type="password" id="password" placeholder="Password" required />
+          <button type="submit">Login</button>
+        </form>
+      </div>
+
+      <div id="detailsView" class="hidden">
+        <h2>Personal Details</h2>
+        <form id="personalDetailsForm">
+          <input type="text" name="name" placeholder="Full Name" required>
+          <input type="number" name="age" placeholder="Age" required>
+          <input type="number" name="height" placeholder="Height (cm)" required>
+          <input type="number" name="weight" placeholder="Weight (kg)" required>
+          <input type="text" name="living_conditions" placeholder="Living Conditions" required>
+          <input type="text" name="working_conditions" placeholder="Working Conditions" required>
+          <textarea name="medical_history" placeholder="Medical History"></textarea>
+          <button type="submit">Submit Details</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
