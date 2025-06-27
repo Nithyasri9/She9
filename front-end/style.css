@@ -93,7 +93,7 @@ header {
 
 /* Hero Section */
 .hero {
-  padding: 70px 20px;
+  padding: 70px 70px;
   background-color: #fff0f2;
   text-align: center;
 }
@@ -113,7 +113,6 @@ header {
 /* Sections */
 section {
   padding: 40px 20px;
-  max-width: 1200px;
   margin: 0 auto;
 }
 
